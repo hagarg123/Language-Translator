@@ -1,0 +1,5 @@
+Bonjour:नमस्ते
+Bonjour:शुभ प्रभात
+Heureux:प्रसन्न
+Forêt:বন। जंगल
+Lever du soleil:सूर्योदय

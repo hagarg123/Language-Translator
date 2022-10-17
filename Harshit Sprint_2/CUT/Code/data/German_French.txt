@@ -1,0 +1,5 @@
+Hallo:Bonjour
+Guten Morgen:Bonjour
+Glücklich:Heureux
+Wald:Forêt
+Sonnenaufgang:Lever du soleil

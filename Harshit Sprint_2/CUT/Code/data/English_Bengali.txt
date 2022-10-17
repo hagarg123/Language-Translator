@@ -1,0 +1,5 @@
+Hello:হ্যালো
+Good Morning:সুপ্রভাত
+Happy:সুখী
+Forest:বন। জংগল
+Sunrise:সূর্যোদয়

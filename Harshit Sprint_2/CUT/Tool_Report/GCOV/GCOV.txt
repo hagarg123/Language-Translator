@@ -1,0 +1,49 @@
+harsh@DESKTOP-NJGS31F ~/sprint_2/src
+$ gcc -fprofile-arcs -ftest-coverage writetofile.c delete.c translate.c modify.c server.c -o server
+
+harsh@DESKTOP-NJGS31F ~/sprint_2/src
+$ gcc -fprofile-arcs -ftest-coverage client.c -o client                         
+
+harsh@DESKTOP-NJGS31F ~/sprint_2/src
+$ gcov client.gcno
+File 'client.c'
+Lines executed:82.61% of 46
+Creating 'client.c.gcov'
+
+Lines executed:82.61% of 46
+
+harsh@DESKTOP-NJGS31F ~/sprint_2/src
+$ gcov server-delete.gcno
+File 'delete.c'
+Lines executed:87.93% of 58
+Creating 'delete.c.gcov'
+
+Lines executed:87.93% of 58
+
+harsh@DESKTOP-NJGS31F ~/sprint_2/src
+$ gcov server-modify.gcno
+File 'modify.c'
+Lines executed:97.14% of 35
+Creating 'modify.c.gcov'
+
+Lines executed:97.14% of 35
+
+
+harsh@DESKTOP-NJGS31F ~/sprint_2/src
+$ gcov server-writetofile.gcno
+File 'writetofile.c'
+Lines executed:97.67% of 43
+Creating 'writetofile.c.gcov'
+
+Lines executed:97.67% of 43
+
+
+harsh@DESKTOP-NJGS31F ~/sprint_2/src
+$ gcov server-translate.gcno
+File 'translate.c'
+Lines executed:52.17% of 23
+Creating 'translate.c.gcov'
+
+Lines executed:52.17% of 23
+
+

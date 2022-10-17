@@ -1,0 +1,5 @@
+Hello:नमस्ते
+Good Morning:शुभ प्रभात
+Happy:प्रसन्न
+Forest:जंगल
+Sunrise:सूर्योदय

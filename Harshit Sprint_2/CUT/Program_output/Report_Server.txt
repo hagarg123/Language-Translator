@@ -1,0 +1,135 @@
+harsh@DESKTOP-NJGS31F ~/sprint_2/bin
+$ ./server.exe
+1) Login
+2) Run
+1
+Welcome to the Login_System
+Please Enter your LoginID
+User
+Please Enter your Password
+12345
+
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+1
+please enter your source language: English
+please enter your target language: Russian
+Enter your word
+Hello
+Enter your meaning
+Привет
+ press 0 for continue or  1 for exit: 1
+
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+2
+please enter your source language: English
+please enter your target language: Russian
+Enter your word
+Welcome
+Enter your meaning
+Добро пожаловать
+ press 0 for continue or  1 for exit: 1
+
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+3
+Enter path of source file: English_Russian.txt
+Enter word to replace: Welcome
+Enter the New word: Good
+
+Successfully replaced all occurrences of 'Welcome' with 'Good'.
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+3
+Enter path of source file: English_Russian.txt
+Enter word to replace: Добро пожаловать
+Enter the New word:
+Successfully replaced all occurrences of 'Добро' with 'пожаловать'.
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+3
+Enter path of source file: English_Russian.txt
+Enter word to replace: Добро пожаловать
+Enter the New word:
+Successfully replaced all occurrences of 'Добро' with 'пожаловать'.
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+4
+
+
+ Delete a specific line from a file :
+-----------------------------------------
+ Input the file name to be opened : English_Russian.txt
+ Input the line you want to remove : Enter your wordGood
+
+2 Now the content of the file English_Russian.txt is :
+Hello:Привет
+
+1) Add New Language
+2) Add New Word_Meaning
+3) Modify Words
+4) Delete Words
+5) Exit
+enter your choice
+5
+
+harsh@DESKTOP-NJGS31F ~/sprint_2/bin
+$ ./server.exe
+1) Login
+2) Run
+2
+server start running
+Word Recieved From Client : Hello
+Source Language Recieved From Client : English
+Target Language Recieved From Client : Russian
+file opening:/home/harsh/sprint_2/data/English_Russian.txt
+Word Recieved From Client : Good Morning
+Source Language Recieved From Client : English
+Target Language Recieved From Client : Hindi
+file opening:/home/harsh/sprint_2/data/English_Hindi.txt

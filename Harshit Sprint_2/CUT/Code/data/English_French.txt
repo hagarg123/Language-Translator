@@ -1,0 +1,5 @@
+Hello:Bonjour
+Good Morning:Bonjour
+Happy:Heureux
+Forest:Forêt
+Sunrise:Lever du soleil

@@ -1,0 +1,14 @@
+harsh@DESKTOP-NJGS31F ~/sprint_2/bin
+$ ./client.exe
+
+Please Enter The Word: Hello
+Please Enter Your Source Language: English
+Please Enter Your Target Language: Russian
+
+      Meaning: Привет
+
+Please Enter The Word: Good Morning
+Please Enter Your Source Language: English
+Please Enter Your Target Language: Hindi
+
+      Meaning: शुभ प्रभात

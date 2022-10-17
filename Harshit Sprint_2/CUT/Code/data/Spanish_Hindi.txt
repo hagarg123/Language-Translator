@@ -1,0 +1,5 @@
+Hola:नमस्ते
+Buenos días:शुभ प्रभात
+Contento:प्रसन्न
+Bosque:जंगल
+Amanecer:सूर्योदय

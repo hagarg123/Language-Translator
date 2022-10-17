@@ -1,0 +1,5 @@
+Bonjour:হ্যালো
+Bonjour:সুপ্রভাত
+Heureux:সুখী
+Forêt:বন। জংগল
+Lever du soleil:সূর্যোদয়

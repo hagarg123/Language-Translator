@@ -1,0 +1,5 @@
+Hola:Hallo
+Buenos días:Guten Morgen
+Contento:Glücklich
+Bosque:Wald
+Amanecer:Sonnenaufgang

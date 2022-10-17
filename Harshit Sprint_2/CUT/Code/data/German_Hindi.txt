@@ -1,0 +1,5 @@
+Hallo:नमस्ते
+Guten Morgen:शुभ प्रभात
+Glücklich:प्रसन्न
+Wald:जंगल
+Sonnenaufgang:सूर्योदय

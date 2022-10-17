@@ -1,0 +1,5 @@
+Hola:Hello
+Buenos días:Good Morning
+Contento:Happy
+Bosque:Forest
+Amanecer:Sunrise

@@ -1,0 +1,5 @@
+Hola:Bonjour
+Buenos días:Bonjour
+Contento:Heureux
+Bosque:Forêt
+Amanecer:Lever du soleil

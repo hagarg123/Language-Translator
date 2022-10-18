@@ -1,0 +1,143 @@
+cg83-user35@instance-1:~/Language-Translator/Harshit Sprint_2/CUT/Code$ splint -I../header ./src/server.c
+Splint 3.1.2 --- 21 Feb 2021
+
+src/server.c:1: Include file <sys/socket.h> matches the name of a POSIX
+    library, but the POSIX library is not being used.  Consider using +posixlib
+    or +posixstrictlib to select the POSIX library, or -warnposix to suppress
+    this message.
+  Header name matches a POSIX header, but the POSIX library is not selected.
+  (Use -warnposixheaders to inhibit warning)
+src/server.c:1: Include file <netinet/in.h> matches the name of a POSIX
+    library, but the POSIX library is not being used.  Consider using +posixlib
+    or +posixstrictlib to select the POSIX library, or -warnposix to suppress
+    this message.
+src/server.c:5: Include file <unistd.h> matches the name of a POSIX library,
+    but the POSIX library is not being used.  Consider using +posixlib or
+    +posixstrictlib to select the POSIX library, or -warnposix to suppress this
+    message.
+< Location unknown >: Field name reused:
+  Code cannot be parsed.  For help on parse errors, see splint -help
+  parseerrors. (Use -syntax to inhibit warning)
+< Location unknown >: Previous use of
+src/server.c: (in function main)
+src/server.c:15:2: Return value (type char *) ignored: fgets(ct, 100, s...
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalother to inhibit warning)
+src/server.c:23:9: Return value (type char *) ignored: fgets(LoginId, 1...
+src/server.c:26:9: Return value (type char *) ignored: fgets(Password, ...
+src/server.c:31:8: Test expression for while not boolean, type int: 1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+src/server.c:35:3: Return value (type char *) ignored: fgets(choice, 25...
+src/server.c:65:15: Function memset expects arg 2 to be int gets char: '0'
+  A character constant is used as an int. Use +charintliteral to allow
+  character constants to be used as ints.  (This is safe since the actual type
+  of a char constant is int.)
+src/server.c:77:18: Function memset expects arg 2 to be int gets char: '0'
+src/server.c:85:44: Function bind expects arg 3 to be socklen_t gets size_t:
+                       sizeof((server))
+  Types are incompatible. (Use -type to inhibit warning)
+src/server.c:85:2: Return value (type int) ignored: bind(fd, (struct...
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+src/server.c:89:2: Return value (type int) ignored: listen(fd, 10)
+src/server.c:90:18: Null storage passed as non-null param:
+                       accept (..., (struct sockaddr *)NULL, ...)
+  A possibly null pointer is passed as a parameter corresponding to a formal
+  parameter with no /*@null@*/ annotation.  If NULL may be used for this
+  parameter, add a /*@null@*/ annotation to the function parameter declaration.
+  (Use -nullpass to inhibit warning)
+src/server.c:90:42: Null storage passed as non-null param: accept (..., NULL)
+src/server.c:94:8: Argument to exit has implementation defined behavior: 1
+  The argument to exit should be 0, EXIT_SUCCESS or EXIT_FAILURE (Use -exitarg
+  to inhibit warning)
+src/server.c:96:8: Test expression for while not boolean, type int: 1
+src/server.c:99:4: Unrecognized identifier: bzero
+  Identifier used in code has not been declared. (Use -unrecog to inhibit
+  warning)
+src/server.c:101:4: Assignment of ssize_t to int: n = recv(in, buff, 256, 0)
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+src/server.c:105:9: Argument to exit has implementation defined behavior: 1
+src/server.c:110:47: Possibly null storage word passed as non-null param:
+                        printf (..., word, ...)
+   src/server.c:109:15: Storage word may become null
+src/server.c:112:58: Possibly null storage sl passed as non-null param:
+                        printf (..., sl, ...)
+   src/server.c:111:13: Storage sl may become null
+src/server.c:114:58: Possibly null storage tl passed as non-null param:
+                        printf (..., tl, ...)
+   src/server.c:113:13: Storage tl may become null
+src/server.c:115:11: Variable nbuff shadows outer declaration
+  An outer declaration is shadowed by the local declaration. (Use -shadow to
+  inhibit warning)
+   src/server.c:62:7: Previous definition of nbuff: char [1024]
+src/server.c:118:5: Return value (type ssize_t) ignored: send(in, nbuff, ...
+src/server.c:122:3: Fresh storage nbuff not released before scope exit
+  A memory leak has been detected. Storage allocated locally is not released
+  before the last reference to it is lost. (Use -mustfreefresh to inhibit
+  warning)
+   src/server.c:115:41: Fresh storage nbuff created
+src/server.c:123:4: Return value (type int) ignored: close(in)
+src/server.c:123:4: Unreachable code: close(in)
+  This code will never be reached on any possible execution. (Use -unreachable
+  to inhibit warning)
+
+Finished checking --- 29 code warnings
+cg83-user35@instance-1:~/Language-Translator/Harshit Sprint_2/CUT/Code$ splint -I ./src/client.c
+Splint 3.1.2 --- 21 Feb 2021
+
+Finished checking --- no code processed
+cg83-user35@instance-1:~/Language-Translator/Harshit Sprint_2/CUT/Code$ splint -I../header ./src/client.c
+Splint 3.1.2 --- 21 Feb 2021
+
+src/client.c:1: Include file <sys/socket.h> matches the name of a POSIX
+    library, but the POSIX library is not being used.  Consider using +posixlib
+    or +posixstrictlib to select the POSIX library, or -warnposix to suppress
+    this message.
+  Header name matches a POSIX header, but the POSIX library is not selected.
+  (Use -warnposixheaders to inhibit warning)
+src/client.c:3: Include file <netinet/in.h> matches the name of a POSIX
+    library, but the POSIX library is not being used.  Consider using +posixlib
+    or +posixstrictlib to select the POSIX library, or -warnposix to suppress
+    this message.
+src/client.c:7: Include file <unistd.h> matches the name of a POSIX library,
+    but the POSIX library is not being used.  Consider using +posixlib or
+    +posixstrictlib to select the POSIX library, or -warnposix to suppress this
+    message.
+< Location unknown >: Field name reused:
+  Code cannot be parsed.  For help on parse errors, see splint -help
+  parseerrors. (Use -syntax to inhibit warning)
+< Location unknown >: Previous use of
+src/client.c: (in function main)
+src/client.c:17:15: Function memset expects arg 2 to be int gets char: '0'
+  A character constant is used as an int. Use +charintliteral to allow
+  character constants to be used as ints.  (This is safe since the actual type
+  of a char constant is int.)
+src/client.c:29:18: Function memset expects arg 2 to be int gets char: '0'
+src/client.c:43:53: Function connect expects arg 3 to be socklen_t gets size_t:
+                       sizeof((server))
+  Types are incompatible. (Use -type to inhibit warning)
+src/client.c:54:7: Unrecognized identifier: bzero
+  Identifier used in code has not been declared. (Use -unrecog to inhibit
+  warning)
+src/client.c:55:7: Return value (type char *) ignored: fgets(buff, 255,...
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalother to inhibit warning)
+src/client.c:58:3: Return value (type char *) ignored: fgets(nbuff, 255...
+src/client.c:61:3: Return value (type char *) ignored: fgets(mbuff, 255...
+src/client.c:69:7: Assignment of ssize_t to int:
+                      in = send(fd, buff, strlen(buff), 0)
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+src/client.c:78:7: Assignment of ssize_t to int: in = recv(fd, buff, 255, 0)
+src/client.c:87:2: Return value (type int) ignored: close(fd)
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+src/client.c:10:14: Parameter argc not used
+  A function parameter is not used in the body of the function. If the argument
+  is needed for type compatibility or future plans, use /*@unused@*/ in the
+  argument declaration. (Use -paramuse to inhibit warning)
+src/client.c:10:26: Parameter argv not used
+
+Finished checking --- 16 code warnings

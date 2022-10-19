@@ -1,0 +1,30 @@
+$ gcc suite.c writetofile.c modify.c delete.c translate.c sunny_rainy_testcase.c -o x2 -lcunit
+
+harsh@DESKTOP-NJGS31F ~/sprint_2/src
+$ ./x2.exe
+
+
+     CUnit - A unit testing framework for C - Version 2.1-3
+     http://cunit.sourceforge.net/
+
+
+Suite: suite writetofile...
+  Test: Test for writetofile() in sunny cases ...passed
+  Test: Test for writetofile() in rainy cases ...passed
+Suite: suite modify...
+  Test: Test for modify() in sunny cases ...passed
+  Test: Test for modify() in rainy cases ...passed
+Suite: suite delete...
+  Test: Test for delete() in sunny cases ...passed
+  Test: Test for delete() in rainy cases ...passed
+Suite: suite translate...
+passedg is Waldy translate() in sunny cases ...meaning is Bonjour
+  Test: Test for translate() in rainy cases ...passed
+
+Run Summary:    Type  Total    Ran Passed Failed Inactive
+              suites      4      4    n/a      0        0
+               tests      8      8      8      0        0
+             asserts     22     22     22      0      n/a
+
+Elapsed time =    0.031 seconds
+

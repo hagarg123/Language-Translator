@@ -1,4 +1,8 @@
-
+/*
+*Creating socket ->connecting with server
+*sending word,source language,target language to server,
+*receive the output from server ->print the output in the terminal
+*/
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <netinet/in.h>
@@ -7,7 +11,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <arpa/inet.h>
-int main(int argc, char *argv[])
+int main()
 {
 	int fd = 0;
 	char buff[1024];
@@ -47,7 +51,7 @@ int main(int argc, char *argv[])
 		return 0;
 	}    	
 	int m=1;
-	while(m<3)
+	while(1)
 	{
 		
 		printf("\nPlease Enter The Word: ");
@@ -82,7 +86,6 @@ int main(int argc, char *argv[])
 			return 0;
 		    }
 		 printf("\n      Meaning: %s\n ",buff);	
-		m++;
 	}
 	close(fd);
 	return 0;

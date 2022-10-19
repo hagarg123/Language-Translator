@@ -1,3 +1,10 @@
+/*
+*It will ask file name -> word
+*open Original file in read mode -> Temp file in write mode...
+*Traversing line by line in original file -> copy the original data with skiping the word line in temp file
+*remove the original file -> rename the temp file->original file
+*/
+
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>

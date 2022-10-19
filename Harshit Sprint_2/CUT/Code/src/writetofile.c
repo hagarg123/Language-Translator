@@ -1,3 +1,10 @@
+/*
+*It will ask source language -> target language..
+*openfile in append mode
+*It wil ask to enter the data in the file word ->meaning ->...
+*close the file....
+*/
+
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>

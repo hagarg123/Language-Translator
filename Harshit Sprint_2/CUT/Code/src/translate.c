@@ -1,3 +1,10 @@
+/*
+*Take the data from server recv() from client..
+*word -> source language -> Target language..
+*open the sl_tl.txt file in read mode..
+*traverse the whole file word meaning ->return the output to server ->send() to client...
+*/
+
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
@@ -6,8 +13,6 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/types.h>
-#define Max 100
-#define MAX 256
 char*translate(char*word,char *sl,char *tl)
 {
 	char str[1024];

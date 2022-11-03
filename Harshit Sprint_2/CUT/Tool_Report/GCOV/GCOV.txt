@@ -7,10 +7,19 @@ $ gcc -fprofile-arcs -ftest-coverage client.c -o client
 harsh@DESKTOP-NJGS31F ~/sprint_2/src
 $ gcov client.gcno
 File 'client.c'
-Lines executed:82.61% of 46
+Lines executed:86.97% of 46
 Creating 'client.c.gcov'
 
-Lines executed:82.61% of 46
+Lines executed:86.97% of 46
+
+harsh@DESKTOP-NJGS31F ~/sprint_2/src
+$ gcov server.gcno
+File 'server.c'
+Lines executed:90.77% of 65
+Creating 'server.c.gcov'
+
+Lines executed:90.77% of 65
+
 
 harsh@DESKTOP-NJGS31F ~/sprint_2/src
 $ gcov server-delete.gcno
@@ -41,9 +50,12 @@ Lines executed:97.67% of 43
 harsh@DESKTOP-NJGS31F ~/sprint_2/src
 $ gcov server-translate.gcno
 File 'translate.c'
-Lines executed:52.17% of 23
+Lines executed:91.30% of 23
 Creating 'translate.c.gcov'
 
-Lines executed:52.17% of 23
+Lines executed:91.30% of 23
+
+
+
 
 

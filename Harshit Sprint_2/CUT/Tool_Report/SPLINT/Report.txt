@@ -1,4 +1,4 @@
-cg83-user35@instance-1:~/Language-Translator/Harshit Sprint_2/CUT/Code$ splint  -warnposix -I../header ./src/server.c
+cg83-user35@instance-1:~/Language-Translator/Harshit Sprint_2/CUT/Code$ splint -predboolint -unrecog -I../header ./src/server.c
 Splint 3.1.2 --- 21 Feb 2021
 
 src/server.c:1: Include file <sys/socket.h> matches the name of a POSIX
@@ -33,7 +33,7 @@ cg83-user35@instance-1:~/Language-Translator/Harshit Sprint_2/CUT/Code$ splint  
 Splint 3.1.2 --- 21 Feb 2021
 
 Finished checking --- no code processed
-cg83-user35@instance-1:~/Language-Translator/Harshit Sprint_2/CUT/Code$ splint -I../header ./src/client.c
+cg83-user35@instance-1:~/Language-Translator/Harshit Sprint_2/CUT/Code$ splint -predboolint -unrecog -I../header ./src/client.c
 Splint 3.1.2 --- 21 Feb 2021
 
 src/client.c:1: Include file <sys/socket.h> matches the name of a POSIX

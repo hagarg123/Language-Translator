@@ -56,13 +56,16 @@ int main()
 		
 		printf("\nPlease Enter The Word: ");
     		bzero(buff,256);
-    		fgets(buff,255,stdin);
-		buff[strlen(buff)-1]='\0';
+    		//fgets(buff,255,stdin);
+		//buff[strlen(buff)-1]='\0';
+		scanf("%s",buff);
 		printf("Please Enter Your Source Language: ");
-		fgets(nbuff,255,stdin);	
-                nbuff[strlen(nbuff)-1]='\0';	
+		//fgets(nbuff,255,stdin);	
+               // nbuff[strlen(nbuff)-1]='\0';	
+		scanf("%s",nbuff);
 		printf("Please Enter Your Target Language: ");
-		fgets(mbuff,255,stdin);
+		scanf("%s",mbuff);
+		//fgets(mbuff,255,stdin);
 		strcat(buff,":");
 		strcat(buff,nbuff);
 		strcat(buff,":");

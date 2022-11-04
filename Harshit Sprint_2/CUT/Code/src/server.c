@@ -66,7 +66,7 @@ int main()
 	
 	int fd = 0;
 	char buff[1024];
-	char nbuff[1024];
+	//char nbuff[1024];
 	printf("server start running");
 	//Setup Buffer Array
 	memset(buff, '0',sizeof(buff));	
@@ -104,7 +104,7 @@ int main()
 	{		
 			//Clear Zeroes
 			bzero(buff,256);
-			bzero(nbuff,256);
+			//bzero(nbuff,256);
 			n = recv(in, buff, 256,0);
 			if(n<0)
 			{
@@ -119,10 +119,10 @@ int main()
 				printf("\nSource Language Recieved From Client : %s",sl);
 				char*tl=strtok(NULL,":");
 				printf("\nTarget Language Recieved From Client : %s",tl);	
-				char *nbuff = translate(word,sl,tl);
+				buff = translate(word,sl,tl);
 				//printf("Server Sending: %s",strrev(buff));
 				//Send the reversed input
-				send(in, nbuff, strlen(nbuff), 0);
+				send(in, buff, strlen(buff), 0);
 		
 				bzero(buff,256);
 										
